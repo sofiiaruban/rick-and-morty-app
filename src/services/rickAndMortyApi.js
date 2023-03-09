@@ -10,7 +10,7 @@ export const rickAndMortyApi = createApi({
       query: () => "character",
     }),
     getCharactersById: builder.query({
-      query: () => `character/${id}`,
+      query: (id) => `character/${id}`,
     }),
   }),
 });

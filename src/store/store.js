@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { rickAndMortyApi } from "../services/rickAndMortyApi";
+import idSlice from "./idSlice";
 
-export default store = configureStore({
+export const store = configureStore({
   reducer: {
     [rickAndMortyApi.path]: rickAndMortyApi.reducer,
+    id: idSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(rickAndMortyApi.middleware),
