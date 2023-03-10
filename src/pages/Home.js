@@ -2,8 +2,11 @@ import { useGetCharactersQuery } from "../services/rickAndMortyApi";
 import { CharacterCard } from "../components/CharacterCard";
 import style from "./Home.module.scss";
 import { Logo } from "../components/Logo";
+import { useState } from "react";
+import { Searchbar } from "./Searchbar";
 export const Home = () => {
-  const { data, error, isLoading } = useGetCharactersQuery();
+  const [query, setQuery] = useState("");
+  const { data, error, isLoading } = useGetCharactersQuery(query);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -12,10 +15,10 @@ export const Home = () => {
   if (error) {
     return <div>Error...</div>;
   }
-  console.log(Array.isArray(data.results));
   return (
     <div className={style.home}>
       <Logo />
+      <Searchbar />
       <div className={style.characterContainer}>
         {data.results.map((item) => (
           <CharacterCard
