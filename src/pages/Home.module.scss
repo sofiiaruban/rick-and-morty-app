@@ -1,5 +1,5 @@
 .home {
-    margin: 4rem 10rem;
+    margin: 4rem 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,5 +7,6 @@
 .characterContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.3rem;
+    justify-content: center
 }
