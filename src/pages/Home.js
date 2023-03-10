@@ -15,10 +15,15 @@ export const Home = () => {
   if (error) {
     return <div>Error...</div>;
   }
+
+  const changeHandler = (event) => {
+    setQuery(event.target.value);
+  };
+
   return (
     <div className={style.home}>
       <Logo />
-      <Searchbar />
+      <Searchbar onChange={changeHandler} value={query} />
       <div className={style.characterContainer}>
         {data.results.map((item) => (
           <CharacterCard
