@@ -2,11 +2,19 @@ import { useGetCharactersQuery } from "../services/rickAndMortyApi";
 import { CharacterCard } from "../components/CharacterCard";
 import style from "./Home.module.scss";
 import { Logo } from "../components/Logo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Searchbar } from "./Searchbar";
 export const Home = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => {
+    const query = localStorage.getItem("query");
+    const initialValue = JSON.parse(query);
+    return initialValue || "";
+  });
   const { data, error, isLoading } = useGetCharactersQuery(query);
+
+  useEffect(() => {
+    localStorage.setItem("query", JSON.stringify(query));
+  }, [query]);
 
   if (isLoading) {
     return <div>Loading...</div>;

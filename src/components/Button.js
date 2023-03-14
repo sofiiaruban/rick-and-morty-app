@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import style from "./Button.module.scss";
 
 export const Button = ({ children }) => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/");
+  };
   return (
-    <a href="/">
-      <button className={style.button}>{children}</button>
-    </a>
+    <button className={style.button} onClick={clickHandler}>
+      {children}
+    </button>
   );
 };
