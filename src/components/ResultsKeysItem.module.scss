@@ -1,6 +1,9 @@
 $fc-grey: #6E798C;
+$bc-light-grey:  #E5E5E5;
 .descriptionListElem {
-  
+  border-bottom: 1px solid $bc-light-grey;
+  width: 25rem;
+  margin: 0 0 0.5rem 0;
 }
 .dt {
     font-weight: 700;
@@ -11,4 +14,5 @@ $fc-grey: #6E798C;
   font-size: 14px;
   color: $fc-grey;
   margin-inline-start: 0;
+  padding: 0 0 0.5rem 0;
 }
