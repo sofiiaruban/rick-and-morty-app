@@ -1,8 +1,10 @@
+import style from "./ResultsKeysItem.module.scss";
+
 export const ResultsKeysItem = ({ term, description }) => {
   return (
-    <>
-      <dt>{term}</dt>
-      <dd>{description}</dd>
-    </>
+    <div className={style.descriptionListElem}>
+      <dt className={style.dt}>{term}</dt>
+      <dd className={style.dd}>{description}</dd>
+    </div>
   );
 };

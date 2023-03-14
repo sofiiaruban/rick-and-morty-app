@@ -13,7 +13,7 @@ export const Home = () => {
   }
 
   if (error) {
-    return <div>Error...</div>;
+    return <div>No Results Found...</div>;
   }
 
   const changeHandler = (event) => {
@@ -27,6 +27,7 @@ export const Home = () => {
       <div className={style.characterContainer}>
         {data.results.map((item) => (
           <CharacterCard
+            id={item.id}
             key={item.id}
             src={item.image}
             name={item.name}
