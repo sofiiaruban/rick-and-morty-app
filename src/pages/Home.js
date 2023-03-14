@@ -4,6 +4,8 @@ import style from "./Home.module.scss";
 import { Logo } from "../components/Logo";
 import { useEffect, useState } from "react";
 import { Searchbar } from "./Searchbar";
+import { StatusMessage } from "../components/StatusMessage";
+
 export const Home = () => {
   const [query, setQuery] = useState(() => {
     const query = localStorage.getItem("query");
@@ -17,11 +19,11 @@ export const Home = () => {
   }, [query]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <StatusMessage message="Loading..." />;
   }
 
   if (error) {
-    return <div>No Results Found...</div>;
+    return <StatusMessage message="Error while loading" />;
   }
 
   const changeHandler = (event) => {
