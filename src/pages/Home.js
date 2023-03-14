@@ -38,6 +38,3 @@ export const Home = () => {
     </div>
   );
 };
-//{
-//  JSON.stringify(data.results);
-//}
