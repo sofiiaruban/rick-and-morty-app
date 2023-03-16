@@ -3,6 +3,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1030px) {
+        margin: 4rem 6rem;
+    }
+    @media (max-width: 1000px) {
+        margin: 4rem 5rem;
+    }
+    @media (max-width: 950px) {
+        margin: 4rem 4rem;
+    }
+    @media (max-width: 900px) {
+        margin: 4rem 3rem;
+    }
+    @media (max-width: 870px) {
+        margin: 3rem 2rem;
+    }
 }
 .characterContainer {
     display: flex;
