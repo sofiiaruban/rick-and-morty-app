@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithPopup } from "firebase/auth";
 import { app, googleAuthProvider } from "../services/firebase";
 import style from "./Auth.module.scss";
 
