@@ -7,6 +7,8 @@
     background-repeat: no-repeat;
     background-position: 0.8rem center;
     border: 2px solid rgba(0, 0, 0, 0.6);
-    
+    @media (max-width: 570px) {
+        margin: 0 0 2rem 0;
+    }
     
 }

@@ -8,4 +8,18 @@
     background-color: lightgray;
     border: 1px solid gray;
     border-radius: 5px;
+    @media (max-width: 1300px) {
+        right: 9rem;
+    }
+    @media (max-width: 1010px) {
+        right: 5rem;
+    }
+    @media (max-width: 870px) {
+        right: 2rem;
+    }
+    @media (max-width: 750px) {
+        top: 2rem;
+    }
+    
+   
 }
