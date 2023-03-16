@@ -13,7 +13,7 @@ export const AuthProvider = () => {
       }
       signInWithPopup(auth, googleAuthProvider)
         .then((credentials) => setUser(credentials.user))
-        .catch((e) => console.error(e));
+        .catch((error) => console.error(error));
     });
     return unsub;
   }, [auth]);
