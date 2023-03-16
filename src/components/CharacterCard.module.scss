@@ -5,6 +5,11 @@ $bc: lightgray;
     border: 1px solid $bc;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
+    @media (max-width: 590px) {
+       max-width: 316px;
+       max-height: 18rem;
+    }
+   
 }
 img {
     width: 100%;
