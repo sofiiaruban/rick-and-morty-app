@@ -11,7 +11,7 @@ export const CharacterCard = ({ id, src, name, species }) => {
         <Img src={src} name={name} classes={`${style.img} `} />
         <div className={style.description}>
           <h3 className={style.h3}>{name}</h3>
-          <p>{species}</p>
+          <p className={style.p}>{species}</p>
         </div>
       </Link>
     </div>

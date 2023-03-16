@@ -11,11 +11,21 @@ img {
     max-height: 70%;
     border-radius: 4px 4px 0 0;
 }
-
+.responsive {
+    max-width: 60%;
+}
 .description {
     margin: 0 0 0 1rem;
 }
+.p {
+    margin: 0.3rem 0 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
 .h3 {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
 }

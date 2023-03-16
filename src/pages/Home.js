@@ -22,10 +22,6 @@ export const Home = () => {
     return <StatusMessage message="Loading..." />;
   }
 
-  if (error) {
-    return <StatusMessage message="Error while loading" />;
-  }
-
   const changeHandler = (event) => {
     setQuery(event.target.value);
   };
@@ -35,15 +31,19 @@ export const Home = () => {
       <Logo />
       <Searchbar onChange={changeHandler} value={query} />
       <div className={style.characterContainer}>
-        {data.results.map((item) => (
-          <CharacterCard
-            id={item.id}
-            key={item.id}
-            src={item.image}
-            name={item.name}
-            species={item.species}
-          />
-        ))}
+        {error ? (
+          <StatusMessage message="No results found" />
+        ) : (
+          data.results.map((item) => (
+            <CharacterCard
+              id={item.id}
+              key={item.id}
+              src={item.image}
+              name={item.name}
+              species={item.species}
+            />
+          ))
+        )}
       </div>
     </div>
   );
