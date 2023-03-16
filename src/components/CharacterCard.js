@@ -10,7 +10,9 @@ export const CharacterCard = ({ id, src, name, species }) => {
       <Link to={`character/${id}`}>
         <Img src={src} name={name} classes={`${style.img} `} />
         <div className={style.description}>
-          <h3 className={style.h3}>{name}</h3>
+          <h3 className={style.h3}>
+            {name.length > 20 ? name.substring(0, 22) + "..." : name}
+          </h3>
           <p className={style.p}>{species}</p>
         </div>
       </Link>
