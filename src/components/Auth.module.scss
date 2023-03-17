@@ -1,25 +1,13 @@
+$bc-light-grey:  #F2F2F7;
 .auth {
     position: absolute;
-    right: 11rem;
-    top: 3rem;
+    right: 1rem;
+    top: 2rem;
     font-size: 20px;
     font-weight: 700;
     padding: 0.5rem;
-    background-color: lightgray;
+    background-color: $bc-light-grey;
     border: 1px solid gray;
     border-radius: 5px;
-    @media (max-width: 1300px) {
-        right: 9rem;
-    }
-    @media (max-width: 1010px) {
-        right: 5rem;
-    }
-    @media (max-width: 870px) {
-        right: 2rem;
-    }
-    @media (max-width: 750px) {
-        top: 2rem;
-    }
-    
-   
+
 }

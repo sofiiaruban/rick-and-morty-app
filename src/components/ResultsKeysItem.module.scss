@@ -5,6 +5,18 @@ $bc-light-grey:  #E5E5E5;
   border-bottom: 1px solid $bc-light-grey;
   width: 25rem;
   margin: 0 0 0.5rem 0;
+  @media (max-width: 470px) {
+    width: 23rem;
+}
+@media (max-width: 440px) {
+  width: 21rem;
+}
+@media (max-width: 400px) {
+  width: 19rem;
+}
+@media (max-width: 380px) {
+  width: 17rem;
+}
 }
 .dt {
     font-weight: 700;

@@ -3,6 +3,9 @@ $bc-light-grey:  #F2F2F7;
 
 .container {
     margin: 3rem 3rem;
+    @media (max-width: 510px) {
+        margin: 3rem 2rem;
+    }
     
 }
 .infoContainer {
@@ -11,17 +14,27 @@ $bc-light-grey:  #F2F2F7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .img {
     max-width: 18rem;
     height: 100%;
     border-radius: 50%;
     border: 5px solid $bc-light-grey;
+    @media (max-width: 510px) {
+        margin: 1rem 0;
+    }
+    @media (max-width: 450px) {
+        margin: 2rem 0 0 0;
+    }
 }
 .h1 {
     margin:1rem 0 0 0;
-    font-size: 48px;
+    font-size: calc(48px + 6 * ((100vw - 320px) / 680));
     line-height: 56px;
+    @media (max-width: 340px) {
+        text-align: center;
+    }
 }
 .h3 {
    color: $fc-grey;
