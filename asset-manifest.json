@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-app/static/css/main.ca665e5c.css",
-    "main.js": "/rick-and-morty-app/static/js/main.ac9add19.js",
-    "static/js/787.9add5da9.chunk.js": "/rick-and-morty-app/static/js/787.9add5da9.chunk.js",
+    "main.css": "/rick-and-morty-app/static/css/main.c41dbcc3.css",
+    "main.js": "/rick-and-morty-app/static/js/main.6bc8e4d0.js",
     "index.html": "/rick-and-morty-app/index.html",
     "static/media/searchIcon.svg": "/rick-and-morty-app/static/media/searchIcon.77cfd6eef4ae63307cd8.svg",
     "static/media/arrow_back.svg": "/rick-and-morty-app/static/media/arrow_back.58acb58c0d6bedac27e8.svg",
-    "main.ca665e5c.css.map": "/rick-and-morty-app/static/css/main.ca665e5c.css.map",
-    "main.ac9add19.js.map": "/rick-and-morty-app/static/js/main.ac9add19.js.map",
-    "787.9add5da9.chunk.js.map": "/rick-and-morty-app/static/js/787.9add5da9.chunk.js.map"
+    "main.c41dbcc3.css.map": "/rick-and-morty-app/static/css/main.c41dbcc3.css.map",
+    "main.6bc8e4d0.js.map": "/rick-and-morty-app/static/js/main.6bc8e4d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca665e5c.css",
-    "static/js/main.ac9add19.js"
+    "static/css/main.c41dbcc3.css",
+    "static/js/main.6bc8e4d0.js"
   ]
 }
